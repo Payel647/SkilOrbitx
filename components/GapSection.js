@@ -3,7 +3,7 @@ import React from 'react';
 const GapSection = () => {
   return (
     <section className="bg-white px-6 py-16">
-      <h2 className="text-3xl font-bold text-center">The Gap We're <span className="text-black/80">Bridging</span></h2>
+      <h2 className="text-3xl font-bold text-center">The Gap Wedon&apos;re <span className="text-black/80">Bridging</span></h2>
 
       <div className="mt-10 grid md:grid-cols-3 gap-10 text-center md:text-left">
         <div>
