@@ -8,19 +8,19 @@ const GapSection = () => {
       <div className="mt-10 grid md:grid-cols-3 gap-10 text-center md:text-left">
         <div>
           <h3 className="font-bold text-lg">Geographic Limitations</h3>
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-gray-600 mt-2">
            Quality education and opportunities are concentrated in metro cities, leaving talented students in Tier-2/3 cities and rural areas behind
           </p>
         </div>
         <div>
           <h3 className="font-bold text-lg">Outdated Education</h3>
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-gray-600 mt-2">
             Quality education and opportunities are concentrated in metro cities, leaving talented students in Tier-2/3 cities and rural areas behind
           </p>
         </div>
         <div>
           <h3 className="font-bold text-lg">Limited Networks</h3>
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-gray-600 mt-2">
             Quality education and opportunities are concentrated in metro cities, leaving talented students in Tier-2/3 cities and rural areas behind
           </p>
         </div>
