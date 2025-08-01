@@ -26,9 +26,9 @@ const BeginSection = () => {
         <div className="bg-white h-10 md:h-20 w-full"></div>
         <div className="bg-black h-0.5 w-[90vw] mx-auto"></div>
         <div className="mt-4 flex justify-center items-center gap-6">
-          <div className="h-10 w-10 border-2 border-black rounded-full"></div>
-          <div className="h-10 w-10 border-2 border-black rounded-full"></div>
-          <div className="h-10 w-10 border-2 border-black rounded-full"></div>
+          <div className="h-10 w-10 lg:w-14 lg:h-14 border-2 border-black rounded-full"></div>
+          <div className="h-10 w-10 lg:w-14 lg:h-14 border-2 border-black rounded-full"></div>
+          <div className="h-10 w-10 lg:w-14 lg:h-14 border-2 border-black rounded-full"></div>
         </div>
         <div className="bg-white h-6 md:h-10 w-full"></div>
       </section>
