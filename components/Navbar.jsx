@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-6 py-4 bg-white shadow fixed w-full z-10">
-      <div className="text-2xl font-bold">Logo</div>
-      <ul className="flex gap-6 text-sm font-medium">
+    <nav className="flex justify-between items-center px-6 py-4 bg-white shadow fixed w-full z-50">
+      <div className="text-2xl font-bold">SkilOrbitx</div>
+      <ul className="flex gap-6 text-sm font-bold">
         <li><a href="#about">About</a></li>
         <li><a href="#program">Program</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
