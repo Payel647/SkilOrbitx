@@ -4,6 +4,7 @@ import GapSection from '../components/GapSection';
 import ProgramSection from '../components/ProgramSection';
 import FaqSection from '@/components/FaqSection';
 import BeginSection from '@/components/BeginSection';
+import PartnerScroll from '@/components/PartnerScroll';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <GapSection />
       <ProgramSection />
+      <PartnerScroll />
       <FaqSection />
       <BeginSection />
     </main>
