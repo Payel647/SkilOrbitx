@@ -27,7 +27,7 @@ export default function HeroSection() {
         <p className="mb-8 text-lg md:text-xl text-gray-100">
           Empowering students from Tier-2, Tier-3, and rural regions with world-class learning, mentorship, and opportunities to become future builders and leaders.
         </p>
-        <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-full text-white font-semibold transition duration-300 shadow-md hover:shadow-lg">
+        <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-white font-semibold transition duration-300 shadow-md hover:shadow-lg"  style={{ borderRadius: '30px' }}>
           Explore Program
         </button>
       </motion.div>

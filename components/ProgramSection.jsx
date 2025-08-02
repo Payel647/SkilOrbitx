@@ -1,73 +1,88 @@
+import Image from "next/image";
+
 const programs = [
   {
     title: "LaunchDeck",
-    status: "Dropping soon!!",
-    image: "/images/lunchdeck.png",
-    align: "right",
-  },
-  {
-    title: "LearnLab",
-    status: "Learn more",
-    image: "/images/learnlab.png",
-    align: "center",
-  },
-  {
-    title: "SkillCircle",
-    status: "Dropping soon!!",
-    image: "/images/skillcircle.png",
-    align: "right",
+    subtitle: "Dropping soon!!",
+    img: "/images/lunchdeck.png",
   },
   {
     title: "Path Mentor",
-    status: "Dropping soon!!",
-    image: "/images/pathmentor.png",
-    align: "right",
+    subtitle: "Dropping soon!!",
+    img: "/images/pathMentor.png",
+  },
+  {
+    title: "LearnLab",
+    subtitle: "Learn more",
+    img: "/images/learnlab.png",
+    large: true,
+  },
+  {
+    title: "SkillCircle",
+    subtitle: "Dropping soon!!",
+    img: "/images/skilcircle.png",
   },
   {
     title: "Vertical 5",
-    status: "Dropping soon!!",
-    image: "",
-    align: "center",
+    subtitle: "Dropping soon!!",
+    img: null, 
   },
 ];
 
-export default function ProgramsSection() {
+const Programs = () => {
   return (
-    <div className="py-10 px-4 sm:px-10 bg-white text-black">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Our Programs</h2>
+    <section className="bg-white py-2 px-6 md:px-20">
+      <h2 className="text-4xl font-bold text-center text-black mb-40">
+        Our Programs
+      </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-        {programs.map((program, index) => (
-          <div
-            key={index}
-            className="w-full max-w-[320px] min-h-[180px] bg-[#0D0D0D] text-white rounded-2xl shadow-md p-4 flex flex-col justify-between"
-          >
-            <div className="flex flex-col gap-3">
-              <h3 className="text-xl font-semibold">{program.title}</h3>
+      <div className="flex flex-col md:flex-row justify-center items-start gap-10">
+        {/* Left Column */}
+        <div className="flex flex-col gap-8">
+          <ProgramCard {...programs[0]} />
+          <ProgramCard {...programs[1]} />
+        </div>
 
-              <span className="bg-white text-black px-3 py-1 text-sm rounded-full w-fit font-medium">
-                {program.status}
-              </span>
-            </div>
+        {/* Center Large Card */}
+        <div className="flex justify-center">
+          <ProgramCard {...programs[2]} large />
+        </div>
 
-            {program.image && (
-              <div
-                className={`mt-4 flex ${
-                  program.align === "center"
-                    ? "justify-center"
-                    : "justify-end"
-                }`}
-              >
-                <img
-                  src={program.image}
-                  alt={program.title}
-                  className="h-24 object-contain"
-                />
-              </div>
-            )}
-          </div>
-        ))}
+        {/* Right Column */}
+        <div className="flex flex-col gap-8">
+          <ProgramCard {...programs[3]} />
+          <ProgramCard {...programs[4]} />
+        </div>
       </div>
+    </section>
+  );
+};
+
+const ProgramCard = ({ title, subtitle, img, large }) => {
+  return (
+    <div
+      className={`bg-black text-white rounded-2xl shadow-xl flex flex-col justify-start p-6 relative overflow-hidden ${
+        large ? "w-[320px] h-[340px]" : "w-[260px] h-[150px]"
+      }`}
+    >
+      <div className="text-xl font-semibold">{title}</div>
+      <div className="bg-white text-black text-xs font-semibold px-3 py-1 rounded-md mt-2 w-max">
+        {subtitle}
+      </div>
+      {img && (
+        <div className="absolute bottom-4 right-4">
+          <Image
+         src={img}
+         alt={title}
+         width={large ? 180 : 80}
+         height={large ? 40 : 80}
+         className="object-contain"
+         />
+
+        </div>
+      )}
     </div>
   );
-}
+};
+
+export default Programs;
