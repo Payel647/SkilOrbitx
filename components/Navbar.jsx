@@ -1,48 +1,39 @@
 "use client";
-import { useState } from "react";
+
+import React from "react";
+
+
+const navmenu = [
+  "About",
+  "Program",
+  "Testimonials",
+  "Impact",
+];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className="bg-white shadow fixed w-full z-50">
-      {/* Container with max width and horizontal center */}
-      <div className="flex justify-between items-center py-4 px-0 sm:px-6 lg:px-8 max-w-screen-xl"> 
-        {/* Left Logo */}
-        <div className="text-2xl font-bold">SkilOrbitx</div>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-sm font-bold pr-0 mr-0">
-          <li><a href="#about" className="hover:text-orange-500">About</a></li>
-          <li><a href="#program" className="hover:text-orange-500">Program</a></li>
-          <li><a href="#testimonials" className="hover:text-orange-500">Testimonials</a></li>
-          <li><a href="#impact" className="hover:text-orange-500">Impact</a></li>
-        </ul>
-
-        {/* Hamburger */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-black focus:outline-none">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"
-              viewBox="0 0 24 24">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+    <nav className="fixed top-0 left-0 w-full z-50">
+       <div className="w-full px-4 sm:px-6 lg:px-4 py-2 flex justify-between items-center bg-white rounded-b-xl shadow-md border border-b-white/20 transition-all duration-300">
+        {/* Logo */}
+        <div className="flex items-center gap-x-3">
+          <span className="font-bold text-black-800 text-lg sm:text-xl tracking-wide">
+            SkilOrbitx
+          </span>
         </div>
-      </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <ul className="md:hidden px-4 pt-0 pb-4 space-y-2 text-sm font-bold bg-white">
-          <li><a href="#about" className="block hover:text-orange-500">About</a></li>
-          <li><a href="#program" className="block hover:text-orange-500">Program</a></li>
-          <li><a href="#testimonials" className="block hover:text-orange-500">Testimonials</a></li>
-          <li><a href="#impact" className="block hover:text-orange-500">Impact</a></li>
+        {/* Navigation Links */}
+        <ul className="hidden md:flex items-center gap-x-6 text-gray-900 font-medium">
+          {navmenu.map((item) => (
+            <li
+              key={item}
+              className="relative cursor-pointer group hover:text-orange-400 text-black-800 transition duration-200"
+            >
+              {item}
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+          ))}
         </ul>
-      )}
+      </div>
     </nav>
   );
 }
