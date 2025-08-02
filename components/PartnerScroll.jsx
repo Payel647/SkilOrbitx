@@ -46,7 +46,7 @@ const PartnerScroll = () => {
   }, [controls]);
 
   return (
-    <div className="bg-white w-full h-[30vh] md:h-[34vh] lg:h-[28vh] xl:h-[30vh] overflow-hidden">
+    <div className="bg-white w-full h-auto pb-4 md:pb-0 md:h-[34vh] lg:h-[28vh] xl:h-[30vh] overflow-hidden">
       <h1 className="text-3xl md:text-4xl text-black font-semibold text-center pt-4">
         Our Partners
       </h1>
