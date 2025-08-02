@@ -36,7 +36,7 @@ const FaqSection = () => {
     <>
       <section className="faq-section h-auto pb-4 md:pb-0 bg-[#041119]">
         <div className="h-auto xl:min-h-[10vh] text-center md:text-left md:ml-[32%]">
-          <h1 className="text-2xl md:text-6xl pt-4 font-semibold tracking-tighter">
+          <h1 className="text-2xl md:text-6xl text-white pt-4 font-semibold tracking-tighter">
             Frequently Asked Questions
           </h1>
         </div>
