@@ -4,7 +4,7 @@ const programs = [
   {
     title: "LaunchDeck",
     subtitle: "Dropping soon!!",
-    img: "/images/lunchdeck.png",
+    img: "/images/lunchDeck.png",
   },
   {
     title: "Path Mentor",
