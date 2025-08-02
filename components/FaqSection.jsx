@@ -34,7 +34,7 @@ const FaqSection = () => {
 
   return (
     <>
-      <section className="faq-section h-auto bg-[#041119]">
+      <section className="faq-section h-auto pb-4 md:pb-0 bg-[#041119]">
         <div className="h-auto xl:min-h-[10vh] text-center md:text-left md:ml-[32%]">
           <h1 className="text-2xl md:text-6xl pt-4 font-semibold tracking-tighter">
             Frequently Asked Questions

@@ -5,7 +5,7 @@ const BeginSection = () => {
     <>
       <div className="bg-white h-6 md:h-10 w-full"></div>
       <section className="bg-white w-full h-auto">
-        <div className="container bg-[#041119] drop-shadow-xl drop-shadow-black/90 w-[90vw] h-[50vh] md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]">
+        <div className="container bg-[#041119] drop-shadow-xl drop-shadow-black/90 w-[90vw] h-auto pb-4 md:pb-0 md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]">
           <h1 className="text-center text-2xl md:text-4xl font-semibold pt-6 md:pt-6 lg:pt-8">
             Ready to Begin Your Journey?
           </h1>
