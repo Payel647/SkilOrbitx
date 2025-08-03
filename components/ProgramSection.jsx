@@ -1,18 +1,10 @@
-"use client"; 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const programs = [
   {
     title: "LaunchDeck",
     subtitle: "Dropping soon!!",
-    img: "/images/lunchDeck.png",
-  
-  },
-  {
-    title: "Path Mentor",
-    subtitle: "Dropping soon!!",
-    img: "/images/pathMentor.png",
+    img: "/images/lunchdeck.png",
   },
   {
     title: "LearnLab",
@@ -25,76 +17,105 @@ const programs = [
     img: "/images/skilcircle.png",
   },
   {
+    title: "Path Mentor",
+    subtitle: "Dropping soon!!",
+    img: "/images/pathMentor.png",
+  },
+  {
     title: "Vertical 5",
     subtitle: "Dropping soon!!",
-    img: null,
   },
 ];
 
-const Programs = () => {
-  const [isDesktop, setIsDesktop] = useState(true);
-
-  useEffect(() => {
-    const checkSize = () => {
-      setIsDesktop(window.innerWidth >= 768); // Tailwind md breakpoint
-    };
-    checkSize();
-    window.addEventListener("resize", checkSize);
-    return () => window.removeEventListener("resize", checkSize);
-  }, []);
-
+export default function Programs() {
   return (
-    <section className="bg-white py-2 px-6 md:px-10">
-      <h2 className="text-4xl font-bold text-center text-black mb-40">
-        Our Programs
-      </h2>
-
-      <div className="flex flex-col md:flex-row justify-center lg:items-start gap-10 ">
-        {/* Left Column */}
-        <div className="flex flex-col gap-8">
-          <ProgramCard {...programs[0]} />
-          <ProgramCard {...programs[1]} />
+    <div className="py-12 px-4 md:px-20 bg-white">
+      <h2 className="text-4xl font-bold text-center mb-10">Our Programs</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
+        {/* LaunchDeck */}
+        <div className="min-h-[260px] bg-[#0F172A] text-white rounded-2xl shadow-md p-6 flex flex-col justify-between relative">
+          <div>
+            <h3 className="text-xl font-semibold">LaunchDeck</h3>
+            <span className="bg-[#fef3c7] text-black text-sm rounded-md px-2 py-1 inline-block mt-2">
+              Dropping soon!!
+            </span>
+          </div>
+          <div className="absolute bottom-4 right-4">
+            <Image
+              src="/images/lunchdeck.png"
+              alt="LaunchDeck"
+              width={120}
+              height={80}
+            />
+          </div>
         </div>
 
-        {/* Center LearnLab Card — conditional large */}
-        <div className="flex justify-center">
-          <ProgramCard {...programs[2]} large={isDesktop} />
+        {/* LearnLab - spans 2 rows */}
+        <div className="row-span-2 bg-[#0F172A] text-white rounded-2xl shadow-md p-6 flex flex-col justify-between relative h-full">
+          <div>
+            <h3 className="text-xl font-semibold">LearnLab</h3>
+            <span className="bg-white text-black text-sm rounded-md px-3 py-1 inline-block mt-2">
+              Learn more
+            </span>
+          </div>
+          <div className="absolute bottom-4 right-4">
+            <Image
+              src="/images/learnlab.png"
+              alt="LearnLab"
+              width={200}
+              height={400}
+            />
+          </div>
         </div>
 
-        {/* Right Column */}
-        <div className="flex flex-col gap-8">
-          <ProgramCard {...programs[3]} />
-          <ProgramCard {...programs[4]} />
+        {/* SkillCircle */}
+        <div className="bg-[#0F172A] text-white rounded-2xl shadow-md p-6 flex flex-col justify-between relative h-full">
+          <div>
+            <h3 className="text-xl font-semibold">SkillCircle</h3>
+            <span className="bg-[#fef3c7] text-black text-sm rounded-md px-2 py-1 inline-block mt-2">
+              Dropping soon!!
+            </span>
+          </div>
+          <div className="absolute bottom-4 right-4">
+            <Image
+              src="/images/skilcircle.png"
+              alt="SkillCircle"
+              width={120}
+              height={80}
+            />
+          </div>
+        </div>
+
+        {/* Path Mentor */}
+        <div className="bg-[#0F172A] text-white rounded-2xl shadow-md p-6 flex flex-col justify-between relative h-full">
+          <div>
+            <h3 className="text-xl font-semibold">Path Mentor</h3>
+            <span className="bg-[#fef3c7] text-black text-sm rounded-md px-2 py-1 inline-block mt-2">
+              Dropping soon!!
+            </span>
+          </div>
+          <div className="absolute bottom-4 right-4">
+            <Image
+              src="/images/pathMentor.png"
+              alt="Path Mentor"
+              width={120}
+              height={80}
+            />
+          </div>
+        </div>
+
+        {/* Vertical 5 */}
+        <div className="bg-[#0F172A] text-white rounded-2xl shadow-md p-6 flex flex-col justify-between relative h-full">
+          <div>
+            <h3 className="text-xl font-semibold">Vertical 5</h3>
+            <span className="bg-[#fef3c7] text-black text-sm rounded-md px-2 py-1 inline-block mt-2">
+              Dropping soon!!
+            </span>
+          </div>
+          <div className="absolute bottom-4 right-4">
+          </div>
         </div>
       </div>
-    </section>
-  );
-};
-
-const ProgramCard = ({ title, subtitle, img, large }) => {
-  return (
-    <div
-      className={`bg-black text-white rounded-2xl shadow-xl flex flex-col justify-start p-6  relative overflow-hidden ${
-        large ? "w-[320px] h-[340px]" : "w-[260px] h-[150px]"
-      }`}
-    >
-      <div className="text-xl font-semibold">{title}</div>
-      <div className="bg-white text-black text-xs font-semibold px-3 py-1 rounded-md mt-2 w-max">
-        {subtitle}
-      </div>
-      {img && (
-        <div className="absolute bottom-4 right-4">
-          <Image
-            src={img}
-            alt={title}
-            width={large ? 180 : 80}
-            height={large ? 40 : 80}
-            className="object-contain"
-          />
-        </div>
-      )}
     </div>
   );
-};
-
-export default Programs;
+}
