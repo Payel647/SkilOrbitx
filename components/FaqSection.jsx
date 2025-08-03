@@ -34,13 +34,13 @@ const FaqSection = () => {
 
   return (
     <>
-      <section className="faq-section h-auto bg-[#041119]">
-        <div className="h-auto xl:min-h-[10vh] text-center md:text-left md:ml-[32%]">
-          <h1 className="text-2xl md:text-6xl pt-4 font-semibold tracking-tighter">
+      <section className="faq-section h-auto pb-4 md:pb-0 bg-[#041119]">
+        <div className="h-auto xl:min-h-[10vh] text-center md:text-left">
+          <h1 className="text-2xl md:text-6xl text-white pt-4 font-semibold tracking-tighter">
             Frequently Asked Questions
           </h1>
         </div>
-        <div className="h-auto xl:min-h-[80vh] flex flex-col w-full md:flex-row">
+        <div className="h-auto xl:min-h-[70vh] flex flex-col w-full md:flex-row">
           <div className="w-full md:w-[40%] mx-auto h-full flex justify-center items-center">
             <img
               className="h-60 w-60 md:w-80 lg:w-120 md:h-80 lg:h-120"
