@@ -7,12 +7,13 @@ const BeginSection = () => {
       <div className="bg-white h-6 md:h-10 w-full" />
 
       <section className="bg-white w-full h-auto">
-        <div className="container bg-[#041119] drop-shadow-xl drop-shadow-black/90 w-[90vw] h-auto pb-4 md:pb-0 md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]">
-          <h1 className="text-center text-white text-2xl md:text-4xl font-semibold pt-6 md:pt-6 lg:pt-8">
+        <div  className="container bg-[#041119] drop-shadow-xl drop-shadow-black/90 h-auto pb-4 md:pb-0 md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]"
+          style={{ width: "90vw", maxWidth: "1400px" }}>
+          <h1 className="text-center text-white text-2xl md:text-4xl font-semibold pt-8 md:pt-6 lg:pt-8">
             Ready to Begin Your Journey?
           </h1>
 
-          <p className="hidden md:block text-xl text-white lg:text-2xl w-[80%] mx-auto pt-4 lg:pt-6 text-center">
+          <p className="hidden md:block text-xl text-white lg:text-2xl w-[80%] mx-auto pt-2 lg:pt-6 text-center">
             Join thousands of students who are building their future with
             SkillOrbitX. Take the first step today. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Tempora laudantium eius, recusandae
@@ -21,7 +22,7 @@ const BeginSection = () => {
             Odio, saepe.
           </p>
 
-          <p className="block md:hidden text-2xl text-white w-[80%] mx-auto pt-4 text-center">
+          <p className="block md:hidden text-2xl text-white w-[90%] mx-auto pt-4 text-center">
             Join thousands of students who are building their future with
             SkillOrbitX.
           </p>
@@ -29,7 +30,8 @@ const BeginSection = () => {
           <div className="flex justify-center items-center pt-4 md:pt-6">
             <button
               type="button"
-              className="bg-white text-[#1042DF] py-2 px-6 rounded-full font-semibold hover:scale-105 transition duration-300"
+              className="bg-white text-[#1042DF] py-2 px-6 rounded-full font-semibold hover:scale-105 transition duration-300 "
+              style={{ borderRadius: "50px" }}
             >
               Register as a Student
             </button>
