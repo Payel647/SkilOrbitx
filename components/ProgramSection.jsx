@@ -49,7 +49,7 @@ const Programs = () => {
         Our Programs
       </h2>
 
-      <div className="flex flex-col md:flex-row justify-center items-start gap-10 ">
+      <div className="flex flex-col md:flex-row justify-center lg:items-start gap-10 ">
         {/* Left Column */}
         <div className="flex flex-col gap-8">
           <ProgramCard {...programs[0]} />
