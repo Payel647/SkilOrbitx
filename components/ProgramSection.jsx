@@ -30,7 +30,7 @@ const programs = [
 export default function Programs() {
   return (
     <div className="py-4 px-4 md:px-20 bg-white w-90vw">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-black">
+      <h2 className="font-bold text-center mb-10 text-black" style={{ fontSize: '60px' }}>
         Our Programs
       </h2>
 
