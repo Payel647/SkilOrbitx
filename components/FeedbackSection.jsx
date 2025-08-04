@@ -346,13 +346,13 @@ const FeedbackSection = () => {
             <div className="absolute hidden md:block -right-0 bottom-[2%] bg-gray-100 border rounded-2xl px-2 py-2 border-black">
               <h3 style={{ fontSize: "24px" }}>Tranfromation</h3>
             </div>
-            <div className="absolute md:hidden bottom-0 left-1/2 -translate-x-1/2 bg-black w-[40%] h-[24%] rounded-2xl px-3 text-white">
+            <div className="absolute md:hidden bottom-0 left-1/2 -translate-x-1/2 bg-black w-[40%] h-[24%] rounded-2xl px-3 py-2 text-white">
               <p className="text-xs">opportunity</p>
             </div>
             <div className="absolute hidden md:block bottom-0 left-1/2 -translate-x-1/2 bg-black rounded-2xl px-3 py-2 text-white">
               <h3 style={{ fontSize: "24px" }}>Opportunity</h3>
             </div>
-            <div className="absolute w-16 h-16 top-7 md:top-2 rounded-full bg-black  text-white flex items-center justify-center z-10">
+            <div className="absolute w-[25%] h-[50%] top-7 md:top-2 rounded-full bg-black  text-white flex items-center justify-center z-10">
               <FaBookOpen size={28} />
             </div>
           </div>
