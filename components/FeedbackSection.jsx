@@ -322,7 +322,7 @@ const FeedbackSection = () => {
             className="w-70 md:w-80 lg:w-120"
           />
         </div>
-        <div className="w-[90vw] mx-auto h-auto pb-4 bg-white">
+        <section id="impact" className="w-[90vw] mx-auto h-auto pb-4 bg-white">
           <h1 className="pt-40">Impact</h1>
           <div
             className="bg-white relative  text-black border flex justify-center border-black"
@@ -385,7 +385,7 @@ const FeedbackSection = () => {
               Students Trained
             </h5>
           </div>
-        </div>
+        </section>
       </section>
     </>
   );
