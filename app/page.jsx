@@ -12,9 +12,15 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroSection />
+      <section id="about">
       <GapSection />
+      </section>
+      <section id="program">
       <ProgramSection />
+      </section>
+      <section id="testimonials">
       <FeedbackSection />
+      </section>
       <PartnerScroll />
       <FaqSection />
       <BeginSection />
