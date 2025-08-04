@@ -29,12 +29,12 @@ const programs = [
 
 export default function Programs() {
   return (
-    <div className="py-4 px-4 md:px-20 bg-white w-90vw">
+    <div className="py-4 px-4 md:px-20 bg-white w-[90vw] mx-auto">
       <h2 className="font-bold text-center mb-10 text-black" style={{ fontSize: '60px' }}>
         Our Programs
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-4 md:gap-6 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-4 md:gap-6 mt-10">
         {/* Map all cards */}
         {programs.map((program, index) => {
           const isLearnLab = program.title === "LearnLab";
