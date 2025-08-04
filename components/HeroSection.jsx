@@ -2,6 +2,11 @@
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
+  const handleExploreClick = () => {
+  const el = document.getElementById("program");
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
+
   return (
     <section className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background Image + Gradient */}
@@ -27,7 +32,11 @@ export default function HeroSection() {
         <p className="mb-8 text-lg md:text-xl text-gray-100">
           Empowering students from Tier-2, Tier-3, and rural regions with world-class learning, mentorship, and opportunities to become future builders and leaders.
         </p>
-        <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-white font-semibold transition duration-300 shadow-md hover:shadow-lg"  style={{ borderRadius: '30px' }}>
+        <button
+          onClick={handleExploreClick}
+          className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-white font-semibold transition duration-300 shadow-md hover:shadow-lg"
+          style={{ borderRadius: "30px" }}
+        >
           Explore Program
         </button>
       </motion.div>

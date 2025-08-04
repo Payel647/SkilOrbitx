@@ -2,13 +2,13 @@ import React from 'react';
 
 const GapSection = () => {
   return (
-    <section className="bg-white px-6 py-16 w-full">
+    <section className="bg-white px-6 py-10 w-full">
       <div className="max-w-[90vw] mx-auto">
         {/* Heading Section */}
         <div className="text-left animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
+          <h2 className="text-5xl font-bold text-gray-900 leading-snug">
             The Gap We're <br />
-            <span className="text-4xl md:text-5xl font-normal italic font-[cursive] text-black">
+            <span className="text-6xl  font-normal italic font-[cursive] text-black">
               Bridging
             </span>
           </h2>
