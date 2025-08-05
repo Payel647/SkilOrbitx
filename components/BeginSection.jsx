@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const BeginSection = () => {
   return (
@@ -7,8 +8,10 @@ const BeginSection = () => {
       <div className="bg-white h-6 md:h-10 w-full" />
 
       <section className="bg-white w-full h-auto">
-        <div  className="container bg-[#041119] drop-shadow-xl drop-shadow-black/90 h-auto pb-4 md:pb-0 md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]"
-          style={{ width: "90vw", maxWidth: "1400px" }}>
+        <div
+          className="container bg-[#041119] drop-shadow-xl drop-shadow-black/90 h-auto pb-4 md:pb-0 md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]"
+          style={{ width: "90vw", maxWidth: "1400px" }}
+        >
           <h1 className="text-center text-white text-2xl md:text-4xl font-semibold pt-8 md:pt-6 lg:pt-8">
             Ready to Begin Your Journey?
           </h1>
@@ -41,13 +44,46 @@ const BeginSection = () => {
         <div className="bg-white h-10 md:h-20 w-full" />
         <div className="bg-black h-0.5 w-[90vw] mx-auto" />
 
-        <div className="mt-4 flex justify-center items-center gap-6">
-          <div className="h-10 w-10 lg:w-14 lg:h-14 border-2 border-black rounded-full hover:bg-gray-200 transition duration-300" />
-          <div className="h-10 w-10 lg:w-14 lg:h-14 border-2 border-black rounded-full hover:bg-gray-200 transition duration-300" />
-          <div className="h-10 w-10 lg:w-14 lg:h-14 border-2 border-black rounded-full hover:bg-gray-200 transition duration-300" />
+          <h1 className="text-center pt-2" style={{ fontSize: "18px", fontWeight: "bold" }}>Follow us:</h1>
+        <div className="flex gap-4 mt-4 text-2xl justify-center items-center text-gray-700">
+          <div className="border-2 border-gray-500 rounded-xl p-2">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter className="text-black transition hover:scale-120" />
+            </a>
+          </div>
+          <div className="border-2 border-gray-500 rounded-xl p-2">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-blue-600 transition hover:scale-120" />
+            </a>
+          </div>
+          <div className="border-2 border-gray-500 rounded-xl p-2">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-pink-500 transition hover:scale-120" />
+            </a>
+          </div>
         </div>
 
-        <div className="bg-white h-6 md:h-10 w-full" />
+        <div className="bg-white h-6 pt-3 md:h-10 w-full">
+          <p className="text-center text-sm text-blue-500">All rights reserved to SkillOrbitX Pvt. Ltd.</p>
+        </div>
+          <div className="flex md:hidden mt-4 justify-center items-center text-gray-500 gap-4 text-xs">
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div className="flex mt-2 justify-center items-center text-gray-500 gap-4 text-xs">
+            <p className="hidden md:block">Terms & Conditions</p>
+            <p className="hidden md:block">Privacy Policy</p>
+          </div>
+        <div className="bg-white h-4 pt-3 w-full" />
+
       </section>
     </>
   );
