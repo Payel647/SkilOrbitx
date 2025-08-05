@@ -329,30 +329,30 @@ const FeedbackSection = () => {
             style={{ width: "90%", height: "20vh", borderRadius: "20px" }}
           >
             <div className="absolute md:hidden -left-0 top-[60%] rotate-[-18deg] bg-gray-100 w-[40%] h-[24%] border rounded-2xl px-2 border-black">
-              <p className="text-xs">Empowerment</p>
+              <p className="text-sm">Empowerment</p>
             </div>
             <div className="absolute hidden md:block -left-0 top-[40%] bg-gray-100 border rounded-2xl w-26 h-10 px-2 py-2 border-black">
               <h3 style={{ fontSize: "24px" }}>Empowerment</h3>
             </div>
             <div className="absolute md:hidden right-4 top-[16%] rotate-[22deg] bg-black rounded-2xl w-[40%] h-[24%]  px-3 text-white">
-              <p className="text-xs">Innovation</p>
+              <p className="text-sm">Innovation</p>
             </div>
             <div className="absolute hidden md:block right-8 top-[10%] bg-black rounded-2xl px-2 py-2 text-white">
               <h3 style={{ fontSize: "24px" }}>Innovation</h3>
             </div>
             <div className="absolute md:hidden -right-0 bottom-[18%] rotate-[18deg] bg-gray-100 border rounded-2xl w-[40%] h-[24%] px-2 border-black">
-              <p className="text-xs">Transformation</p>
+              <p className="text-sm">Transformation</p>
             </div>
             <div className="absolute hidden md:block -right-0 bottom-[2%] bg-gray-100 border rounded-2xl px-2 py-2 border-black">
               <h3 style={{ fontSize: "24px" }}>Tranfromation</h3>
             </div>
             <div className="absolute md:hidden bottom-0 left-1/2 -translate-x-1/2 bg-black w-[40%] h-[24%] rounded-2xl px-3 py-2 text-white">
-              <p className="text-xs">opportunity</p>
+              <p className="text-sm">opportunity</p>
             </div>
             <div className="absolute hidden md:block bottom-0 left-1/2 -translate-x-1/2 bg-black rounded-2xl px-3 py-2 text-white">
               <h3 style={{ fontSize: "24px" }}>Opportunity</h3>
             </div>
-            <div className="absolute w-[25%] h-[50%] top-7 md:top-2 rounded-full bg-black  text-white flex items-center justify-center z-10">
+            <div className="absolute w-[25%] h-[50%] top-10 md:top-2 rounded-full bg-black  text-white flex items-center justify-center z-10">
               <FaBookOpen size={28} />
             </div>
           </div>

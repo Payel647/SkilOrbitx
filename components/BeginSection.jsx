@@ -53,7 +53,7 @@ const BeginSection = () => {
           </div>
           <div className="border-2 border-gray-500 rounded-xl p-2">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/skillorbitx/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,7 +62,7 @@ const BeginSection = () => {
           </div>
           <div className="border-2 border-gray-500 rounded-xl p-2">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/skillorbitx?igsh=b3JpajMyM3BoeXQw"
               target="_blank"
               rel="noopener noreferrer"
             >
