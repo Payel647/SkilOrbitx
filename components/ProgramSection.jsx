@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import React from "react";
 const programs = [
   {
     title: "LaunchDeck",
@@ -46,9 +46,13 @@ export default function Programs() {
              className={`bg-[#0F172A] text-white rounded-2xl shadow-[0_8px_20px_rgba(0,0,0,1)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.35)] transition-all duration-300 hover:scale-[1.02] p-6 relative flex flex-col justify-between overflow-hidden ${isLearnLab ? "md:row-span-2 min-h-[220px]":"min-h-[220px]"}`}>
               <div>
                 <h3 className="text-xl font-semibold">{program.title}</h3>
+                {isLearnLab ? (<a  href="https://www.skillorbitx.com/"  target="_blank"  rel="noopener noreferrer"  className="bg-[#fef3c7] text-black text-sm rounded-md px-2 py-1 inline-block mt-2 hover:underline cursor-pointer" style={{ textDecoration: 'none' }} >
+                {program.subtitle}
+                 </a>) : (
                 <span className="bg-[#fef3c7] text-black text-sm rounded-md px-2 py-1 inline-block mt-2">
-                  {program.subtitle}
-                </span>
+               {program.subtitle}
+               </span>)}
+
               </div>
 
               {/* Image if available */}
