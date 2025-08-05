@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { FaArrowRight, FaArrowDown } from "react-icons/fa";
+import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 
 const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -57,15 +59,9 @@ const FaqSection = () => {
               >
                 <div className="flex justify-between items-center">
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold">{item.question}</h3>
-                  <img
-                    src={
-                      openIndex === index
-                        ? "/components/rightarrow.png"
-                        : "/components/rightarrow.png"
-                    }
-                    alt="arrow"
-                    className="w-4 h-4 ml-2 transition-transform duration-300"
-                  />
+                  <span className="ml-2 transition-transform duration-300 text-xl md:text-2xl">
+                  {openIndex === index ? <IoIosArrowDown /> : <IoIosArrowForward />}
+                </span>
                 </div>
                 {openIndex === index && (
                   <p className="mt-2 text-xl">{item.answer}</p>
