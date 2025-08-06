@@ -2,7 +2,7 @@ import React from 'react';
 
 const GapSection = () => {
   return (
-    <section className="bg-white px-6 py-10 w-full">
+    <section className="bg-white py-10 w-full">
       <div className="max-w-[90vw] mx-auto">
         {/* Heading Section */}
         <div className="text-left animate-fade-in-up">
