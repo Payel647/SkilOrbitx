@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaArrowRight, FaArrowDown } from "react-icons/fa";
+// import { FaArrowRight, FaArrowDown } from "react-icons/fa";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 
 const FaqSection = () => {

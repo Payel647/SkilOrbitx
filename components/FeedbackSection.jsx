@@ -3,6 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaBookOpen } from "react-icons/fa6";
 import { FaStar, FaRegStar } from "react-icons/fa";
+import { Caveat } from "next/font/google";
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["600"], 
+});
+
 
 const FeedbackSection = () => {
   const reviews = [
@@ -129,7 +136,7 @@ const FeedbackSection = () => {
                 <h3 className="text-center" style={{ fontSize: "50px" }}>
                   Hear From Our
                 </h3>
-                <h1 className="font-bold italic" style={{ fontSize: "70px" }}>
+                <h1 className={`${caveat.className} font-bold italic`} style={{ fontSize: "70px" }}>
                   changemakers
                 </h1>
               </div>
@@ -164,7 +171,7 @@ const FeedbackSection = () => {
                 </div>
 
                 <div className="absolute -right-0 bottom-[16%] rotate-[18deg] bg-gray-100 border rounded-2xl px-3 py-2 border-black">
-                  <h3 style={{ fontSize: "22px" }}>Tranfromation</h3>
+                  <h3 style={{ fontSize: "22px" }}>Tranformation</h3>
                 </div>
 
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black rounded-2xl px-3 py-2 text-white">
@@ -230,12 +237,12 @@ const FeedbackSection = () => {
 
       <section className="bg-white lg:hidden relative w-full h-full">
         <div className="w-full h-auto pb-44 bg-[#041119] text-white">
-          <div className="w-full pt-2 flex justify-center">
+          <div className="w-full pt-4 flex justify-center">
             <div className="text-white flex flex-col">
-              <h3 className="text-center" style={{ fontSize: "20px" }}>
+              <h3 className="text-center" style={{ fontSize: "22px" }}>
                 Hear From Our
               </h3>
-              <h1 className="font-bold italic" style={{ fontSize: "40px" }}>
+              <h1 className={`${caveat.className} font-bold`} style={{ fontSize: "50px" }}>
                 changemakers
               </h1>
             </div>
@@ -353,7 +360,7 @@ const FeedbackSection = () => {
             </div>
             <div className="absolute hidden md:block -right-0 bottom-[2%] bg-gray-100 border rounded-2xl px-2 py-2 border-black">
               <div className="flex items-center justify-center h-full">
-                <h3 style={{ fontSize: "24px" }}>Tranfromation</h3>
+                <h3 style={{ fontSize: "24px" }}>Tranformation</h3>
               </div>
             </div>
             <div className="absolute md:hidden bottom-0 left-1/2 -translate-x-1/2 bg-black w-[38%] pt-4 h-[24%] rounded-2xl px-3 py-2 text-white">

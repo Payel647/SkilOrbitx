@@ -1,4 +1,11 @@
+"use client";
 import React from 'react';
+import { Caveat } from "next/font/google";
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["600"], 
+});
 
 const GapSection = () => {
   return (
@@ -8,7 +15,7 @@ const GapSection = () => {
         <div className="text-left animate-fade-in-up">
           <h2 className="text-5xl font-bold text-gray-900 leading-snug">
             The Gap We're <br />
-            <span className="text-6xl  font-normal italic font-[cursive] text-black">
+            <span className={`text-6xl ${caveat.className} font-normal italic text-black`}>
               Bridging
             </span>
           </h2>
