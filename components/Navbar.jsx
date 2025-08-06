@@ -11,15 +11,27 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center bg-white rounded-b-xl shadow-md border border-b-white/20 transition-all duration-300">
-        {/* Logo */}
-        <div className="flex items-center gap-x-3">
-          <Image src="/images/img.png" alt="SkilOrbitx Logo" width={32} height={32} className="object-contain" />
-          <span className="font-bold text-black-800 text-lg sm:text-xl tracking-wide">
-            SkilOrbitx
-          </span>
-        </div>
+       <Link href="#hero" scroll={true}>
+      <div className="flex items-center gap-x-3 cursor-pointer">
+       {/* Rocket Icon */}
+      <Image
+      src="/images/img.png"
+      alt="Rocket Icon"
+      width={40}
+      height={40}
+      className="object-contain" />
 
-        {/* Desktop Navigation */}
+       {/* SkillOrbitX Text */}
+      <Image
+      src="/images/logo.png"
+      alt="SkillOrbitX Text Logo"
+      width={140}
+      height={40}
+      className="object-contain hidden sm:block"
+    />
+  </div>
+  </Link>
+     {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-x-6 text-gray-900 font-medium">
           {navmenu.map((item) => (
          <Link key={item} href={`#${item.toLowerCase()}`} scroll={true} style={{textDecoration: "none"}} className="relative cursor-pointer group text-black no-underline hover:text-orange-400 transition duration-200"> {item}

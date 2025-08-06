@@ -11,7 +11,9 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <section id="hero">
       <HeroSection />
+      </section>
       <section id="about">
       <GapSection />
       </section>
