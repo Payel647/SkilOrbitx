@@ -322,7 +322,7 @@ const FeedbackSection = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 md:right-14 top-[40%] md:top-[50%] translate-y-[-40%] z-10">
+        <div className="absolute right-0 md:right-14 top-[42%] md:top-[50%] translate-y-[-40%] z-10">
           <img
             src="./images/graduatedgirl.png"
             alt="Graduated Girl"
