@@ -16,6 +16,7 @@
     }
   }
 
+
   .animate-scrollFeedback {
     animation: scrollFeedback 12s linear infinite;
   }
