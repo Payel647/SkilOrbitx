@@ -9,7 +9,7 @@ const BeginSection = () => {
 
       <section className="bg-white w-full h-auto">
         <div
-          className="container bg-[#041119] drop-shadow-xl drop-shadow-black/90 h-auto pb-4 md:pb-0 md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]"
+          className="container bg-[#041119] drop-shadow-xl drop-shadow-black/70 h-auto pb-4 md:pb-0 md:h-[52vh] lg:h-[44vh] mx-auto rounded-4xl md:rounded-[100px]"
           style={{ width: "90vw", maxWidth: "1400px" }}
         >
           <h1 className="text-center text-white text-2xl md:text-4xl font-semibold pt-8 md:pt-6 lg:pt-8">

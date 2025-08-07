@@ -3,6 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaBookOpen } from "react-icons/fa6";
 import { FaStar, FaRegStar } from "react-icons/fa";
+import { Caveat } from "next/font/google";
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["600"], 
+});
+
 
 const FeedbackSection = () => {
   const reviews = [
@@ -129,7 +136,7 @@ const FeedbackSection = () => {
                 <h3 className="text-center" style={{ fontSize: "50px" }}>
                   Hear From Our
                 </h3>
-                <h1 className="font-bold italic" style={{ fontSize: "70px" }}>
+                <h1 className={`${caveat.className} font-bold italic`} style={{ fontSize: "70px" }}>
                   changemakers
                 </h1>
               </div>
@@ -164,7 +171,7 @@ const FeedbackSection = () => {
                 </div>
 
                 <div className="absolute -right-0 bottom-[16%] rotate-[18deg] bg-gray-100 border rounded-2xl px-3 py-2 border-black">
-                  <h3 style={{ fontSize: "22px" }}>Tranfromation</h3>
+                  <h3 style={{ fontSize: "22px" }}>Tranformation</h3>
                 </div>
 
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-black rounded-2xl px-3 py-2 text-white">
@@ -230,12 +237,12 @@ const FeedbackSection = () => {
 
       <section className="bg-white lg:hidden relative w-full h-full">
         <div className="w-full h-auto pb-44 bg-[#041119] text-white">
-          <div className="w-full pt-2 flex justify-center">
+          <div className="w-full pt-4 flex justify-center">
             <div className="text-white flex flex-col">
-              <h3 className="text-center" style={{ fontSize: "20px" }}>
+              <h3 className="text-center" style={{ fontSize: "22px" }}>
                 Hear From Our
               </h3>
-              <h1 className="font-bold italic" style={{ fontSize: "40px" }}>
+              <h1 className={`${caveat.className} font-bold`} style={{ fontSize: "50px" }}>
                 changemakers
               </h1>
             </div>
@@ -315,7 +322,7 @@ const FeedbackSection = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 md:right-14 top-[40%] md:top-[50%] translate-y-[-40%] z-10">
+        <div className="absolute right-0 md:right-14 top-[42%] md:top-[50%] translate-y-[-40%] z-10">
           <img
             src="./images/graduatedgirl.png"
             alt="Graduated Girl"
@@ -328,7 +335,7 @@ const FeedbackSection = () => {
             className="bg-white relative  text-black border flex justify-center border-black"
             style={{ width: "90%", height: "20vh", borderRadius: "20px" }}
           >
-            <div className="absolute md:hidden -left-0 top-[60%] rotate-[-18deg] bg-gray-100 w-[38%] h-[24%] border rounded-2xl px-2 border-black">
+            <div className="absolute md:hidden -left-0 top-[62%] rotate-[-18deg] bg-gray-100 w-[38%] h-[24%] border rounded-2xl px-2 pt-2 border-black">
               <div className="flex items-center justify-center h-full">
                 <p className="text-sm">Empowerment</p>
               </div>
@@ -336,31 +343,37 @@ const FeedbackSection = () => {
             <div className="absolute hidden md:block -left-0 top-[40%] bg-gray-100 border rounded-2xl w-26 h-10 px-2 py-2 border-black">
               <h3 style={{ fontSize: "24px" }}>Empowerment</h3>
             </div>
-            <div className="absolute md:hidden right-4 top-[18%] rotate-[22deg] bg-black rounded-2xl w-[38%] h-[24%]  px-3 text-white">
+            <div className="absolute md:hidden right-1 top-[36%] rotate-[20deg] bg-black rounded-2xl w-[38%] h-[24%] pt-2 px-3 text-white">
+              <div className="flex items-center justify-center h-full">
               <p className="text-sm">Innovation</p>
+            </div>
             </div>
             <div className="absolute hidden md:block right-8 top-[10%] bg-black rounded-2xl px-2 py-2 text-white">
               <div className="flex items-center justify-center h-full">
                 <h3 style={{ fontSize: "24px" }}>Innovation</h3>
               </div>
             </div>
-            <div className="absolute md:hidden -right-0 bottom-[18%] rotate-[18deg] bg-gray-100 border rounded-2xl w-[38%] h-[24%] px-2 border-black">
+            <div className="absolute md:hidden -right-0 bottom-[14%] rotate-[18deg] bg-gray-100 border pt-2 rounded-2xl w-[38%] h-[24%] px-2 border-black">
+              <div className="flex items-center justify-center h-full">
               <p className="text-sm">Transformation</p>
+            </div>
             </div>
             <div className="absolute hidden md:block -right-0 bottom-[2%] bg-gray-100 border rounded-2xl px-2 py-2 border-black">
               <div className="flex items-center justify-center h-full">
-                <h3 style={{ fontSize: "24px" }}>Tranfromation</h3>
+                <h3 style={{ fontSize: "24px" }}>Tranformation</h3>
               </div>
             </div>
-            <div className="absolute md:hidden bottom-0 left-1/2 -translate-x-1/2 bg-black w-[38%] h-[24%] rounded-2xl px-3 py-2 text-white">
-              <p className="text-sm">opportunity</p>
+            <div className="absolute md:hidden bottom-0 left-1/2 -translate-x-1/2 bg-black w-[38%] pt-4 h-[24%] rounded-2xl px-3 py-2 text-white">
+              <div className="flex items-center justify-center h-full">
+              <p className="text-sm">Opportunity</p>
+            </div>
             </div>
             <div className="absolute hidden md:block bottom-0 left-1/2 -translate-x-1/2 bg-black rounded-2xl px-3 py-2 text-white">
               <div className="flex items-center justify-center h-full">
                 <h3 style={{ fontSize: "24px" }}>Opportunity</h3>
               </div>
             </div>
-            <div className="absolute w-[25%] h-[50%] top-11 md:top-2 rounded-full bg-black  text-white flex items-center justify-center z-10">
+            <div className="absolute w-[25%] h-[50%] top-12 md:top-2 rounded-full bg-black  text-white flex items-center justify-center z-10">
               <FaBookOpen size={28} />
             </div>
           </div>
