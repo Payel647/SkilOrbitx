@@ -9,6 +9,7 @@ import FeedbackSection from '@/components/FeedbackSection';
 
 export default function Home() {
   return (
+    <>
     <main>
       <Navbar />
       <section id="hero">
@@ -27,5 +28,6 @@ export default function Home() {
       <FaqSection />
       <BeginSection />
     </main>
+    </>
   );
 }
