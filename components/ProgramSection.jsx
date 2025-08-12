@@ -6,19 +6,19 @@ const programs = [
     title: "LaunchDeck",
     subtitle: "Learn more",
     img: "/images/lunchDeck.png",
-    link: "https://app.skillorbitx.com",
+    link: "https://app.skillorbitx.com/mentor/launch-deck",
   },
   {
     title: "LearnLab",
     subtitle: "Learn more",
     img: "/images/learnlab.png",
-    link: "https://app.skillorbitx.com",
+    link: "https://app.skillorbitx.com/mentor/learn-lab",
   },
   {
     title: "Path Mentor",
     subtitle: "Learn more",
     img: "/images/pathMentor.png",
-    link: "https://app.skillorbitx.com",
+    link: "https://app.skillorbitx.com/mentors",
   },
   {
     title: "SkillCircle",

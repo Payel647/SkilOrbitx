@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-
+import Link from "next/link";
 const BeginSection = () => {
   return (
     <>
@@ -79,8 +79,12 @@ const BeginSection = () => {
             <p>Privacy Policy</p>
           </div>
           <div className="flex mt-2 justify-center items-center text-gray-500 gap-4 text-xs">
-            <p className="hidden md:block">Terms & Conditions</p>
-            <p className="hidden md:block">Privacy Policy</p>
+            <a href="https://app.skillorbitx.com/page/terms-and-condition"  target="_blank" rel="noopener noreferrer" className="hidden md:block no-underline hover:no-underline decoration-none text-black">
+            Terms & Conditions
+           </a>
+          <a href="https://app.skillorbitx.com/page/privacy-policy" target="_blank"  rel="noopener noreferrer" className="hidden md:block no-underline hover:no-underline decoration-none text-black">
+          Privacy Policy
+          </a>
           </div>
         <div className="bg-white h-4 pt-3 w-full" />
 
